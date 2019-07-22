@@ -17,7 +17,7 @@ class HomeScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     const webview = navigation.getParam("webview", {});
     return {
-      title: "Lunch Tyme",
+      title: "",
       headerStyle: {
         backgroundColor: "#43E895",
         border: 0
