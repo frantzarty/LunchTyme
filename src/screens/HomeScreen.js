@@ -76,7 +76,7 @@ class HomeScreen extends Component {
           renderItem={({ item }) => this._renderItem(item, navigation)}
           keyExtractor={this._keyExtractor}
           refreshing={stores.restaurantStore.loading}
-          onRefresh={() => stores.yoursSessionStore.loadRestaurants()}
+          onRefresh={() => stores.restaurantStore.loadRestaurants()}
           onEndReached={info => {
             if (
               info.distanceFromEnd >= -10 &&
